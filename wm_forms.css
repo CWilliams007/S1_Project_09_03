@@ -14,12 +14,29 @@
 */
 
 /* Field Set Styles */
+/* removed left border of fieldsets, width 60%, and adds top bottom margin of 10px 0px of left and right margin. */
+fieldset {
+    border-left: none;
+    width: 60%;
+    margin: 10px 0px;
+}
 
+/* step 20 sets background color of legends, width 100% and adds margin of 2px to top and bottom. */
+fieldset legend {
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    margin: 2px 0px;
+}
 
 
 
 /* DIV Styles */
-
+/* step 21 floats divs with class of slider to the left, width 60%, top bottom margin of 2px */
+div.slider {
+    float: left;
+    width: 60%;
+    margin: 2px 0px;
+}
 
 
 

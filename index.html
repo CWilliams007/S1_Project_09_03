@@ -82,9 +82,11 @@
             </p>
 
             <legend>Fonts</legend>
+            <!-- Fieldset for options and selections of transforming the preview text -->
             <fieldset>
                 <label for="fontfamily">Font Family</label>
                 <select name="fontfamily" id="fontfamily">
+                    <!-- seperating the generic fonts with optgroup -->
                     <optgroup label="Generic">
                         <option value="default">Default</option>
                         <option value="serif">Serif</option>
@@ -93,6 +95,7 @@
                         <option value="cursive">cursive</option>
                         <option value="fantasy">fantasy</option>
                     </optgroup>
+                    <!-- seperating the specific fonts with optgroup -->
                     <optgroup label="Specific">
                         <option value="Arial">Arial</option>
                         <option value="'Book Antiqua'">'Book Antiqua'</option>
@@ -111,12 +114,88 @@
                     <option value="Italic">Italic</option>
                     <option value="Oblique">Oblique</option>
                 </select>
-                <label for="fontstyle">Font Weight</label>
+                <label for="fontweight">Font Weight</label>
                 <select name="fontweight" id="fontstyle">
                     <option value="Normal">Normal</option>
                     <option value="Italic">Italic</option>
                     <option value="Oblique">Oblique</option>
                 </select>
+                <br>
+                <label for="textdecoration">Text Decoration</label>
+                <select name="textdecoration" id="textdecoration">
+                    <option value="None">None</option>
+                    <option value="Line-Through">Line-Through</option>
+                    <option value="Overline">Overline</option>
+                    <option value="Underline">Underline</option>
+                </select>
+                <label for="texttransform">Text Transform</label>
+                <select name="texttrasnform" id="texttransform">
+                    <option value="None">None</option>
+                    <option value="Capitalize">Capitalize</option>
+                    <option value="Lowercase">Lowercase</option>
+                    <option value="Uppercase">Uppercase</option>
+                </select>
+                <label for="fontvariant">Font Variant</label>
+                <select name="fontvariant" id="fontvariant">
+                    <option value="Normal">Normal</option>
+                    <option value="Small-Caps">Small-Caps</option>
+                </select>
+            </fieldset>
+            <!-- Colors Legend -->
+            <legend>Colors</legend>
+            <!-- Colors Fieldset -->
+            <fieldset>
+                <!-- Font Color label and input -->
+                <label for="color">Font Color</label>
+                <!-- Type is color, default value is black -->
+                <input name="color" id="color" type="color" value="#000000">
+                <!-- Background color label and input -->
+                <label for="backgroundcolor">Background Color</label>
+                <!-- Type is color, default value is white, placeholder of "rrggbb" -->
+                <input name="backgroundcolor" id="backgroundcolor" type="color" value="#FFFFFF" placeholder="#rrggbb">
+            </fieldset>
+
+            <!-- Sizes Legend -->
+            <legend>Sizes</legend>
+            <!-- Sizes Fieldset -->
+            <fieldset>
+                <!-- Slider for font size -->
+                <label for="fontsize">Font Size (px)</label>
+                <!-- Div container for slider, with slider class -->
+                <div class="slider">
+                    <!-- Text 8 is displayed left of slider -->
+                    8
+                    <!-- Input for slider, type range, default value 14, in steps of one, min is 8 and max is 40 -->
+                    <input name="fontsize" id="fontsize" type="range" value="14" step="1" min="8" max="40">
+                    <!-- Text 40 is displayed right of slider -->
+                    40
+                </div>
+                <!-- Same code for all other sliders. Default value is 0, min 0, max 10. -->
+                <label for="letterspacing">Letter Spacing (px)</label>
+                <div class="slider">
+                    0
+                    <input name="letterspacing" id="letterspacing" type="range" value="0" step="1" min="0" max="10">
+                    10
+                </div>
+                <label for="wordspacing">Word Spacing (px)</label>
+                <div class="slider">
+                    0
+                    <input name="wordspacing" id="wordspacing" type="range" value="0" step="1" min="0" max="10">
+                    10
+                </div>
+                <label for="lineheight">Line Height (px)</label>
+                <div class="slider">
+                    0
+                    <input name="lineheight" id="lineheight" type="range" value="0" step="1" min="0" max="10">
+                    10
+                </div>
+                <label for="textindent">Text Indent (px)</label>
+                <div class="slider">
+                    0
+                    <input name="textindent" id="textindent" type="range" value="0" step="1" min="0" max="10">
+                    10
+                </div>
+
             </fieldset>
         </form>
 
