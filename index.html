@@ -81,9 +81,10 @@
                 Select the CSS style values from the form below and preview the sample text in the preview box
             </p>
 
-            <legend>Fonts</legend>
+
             <!-- Fieldset for options and selections of transforming the preview text -->
             <fieldset>
+                <legend>Fonts</legend>
                 <label for="fontfamily">Font Family</label>
                 <select name="fontfamily" id="fontfamily">
                     <!-- seperating the generic fonts with optgroup -->
@@ -108,6 +109,7 @@
                         <option value="'Times New Roman'">'Times New Roman'</option>
                     </optgroup>
                 </select>
+                <!-- generic label, select list, and options repeated over and over -->
                 <label for="fontstyle">Font Style</label>
                 <select name="fontstyle" id="fontstyle">
                     <option value="Normal">Normal</option>
@@ -115,12 +117,14 @@
                     <option value="Oblique">Oblique</option>
                 </select>
                 <label for="fontweight">Font Weight</label>
-                <select name="fontweight" id="fontstyle">
+                <select name="fontweight" id="fontweight">
                     <option value="Normal">Normal</option>
                     <option value="Italic">Italic</option>
                     <option value="Oblique">Oblique</option>
                 </select>
+                <!-- break -->
                 <br>
+                <!-- generic label and select lists with options repeated -->
                 <label for="textdecoration">Text Decoration</label>
                 <select name="textdecoration" id="textdecoration">
                     <option value="None">None</option>
@@ -129,7 +133,7 @@
                     <option value="Underline">Underline</option>
                 </select>
                 <label for="texttransform">Text Transform</label>
-                <select name="texttrasnform" id="texttransform">
+                <select name="texttransform" id="texttransform">
                     <option value="None">None</option>
                     <option value="Capitalize">Capitalize</option>
                     <option value="Lowercase">Lowercase</option>
@@ -142,9 +146,10 @@
                 </select>
             </fieldset>
             <!-- Colors Legend -->
-            <legend>Colors</legend>
+
             <!-- Colors Fieldset -->
             <fieldset>
+                <legend>Colors</legend>
                 <!-- Font Color label and input -->
                 <label for="color">Font Color</label>
                 <!-- Type is color, default value is black -->
@@ -156,9 +161,10 @@
             </fieldset>
 
             <!-- Sizes Legend -->
-            <legend>Sizes</legend>
+
             <!-- Sizes Fieldset -->
             <fieldset>
+                <legend>Sizes</legend>
                 <!-- Slider for font size -->
                 <label for="fontsize">Font Size (px)</label>
                 <!-- Div container for slider, with slider class -->
@@ -186,8 +192,8 @@
                 <label for="lineheight">Line Height (px)</label>
                 <div class="slider">
                     0
-                    <input name="lineheight" id="lineheight" type="range" value="0" step="1" min="0" max="10">
-                    10
+                    <input name="lineheight" id="lineheight" type="range" value="1" step="0.2" min="0" max="4">
+                    4
                 </div>
                 <label for="textindent">Text Indent (px)</label>
                 <div class="slider">
@@ -199,7 +205,7 @@
             </fieldset>
         </form>
 
-
+        <!-- rendered text with empty div, id is connected to JS form that displays rendererd text -->
         <h2>Rendered Text</h2>
         <div id="output"></div>
 
